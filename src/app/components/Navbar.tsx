@@ -1,4 +1,6 @@
 'use client'
+import { faTelegram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 export default function Navbar() {
@@ -35,6 +37,7 @@ export default function Navbar() {
                                 <a href="/" className="transition bg-gray-950 hover:bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium">Главная</a>
                                 <a href="/news/1" className="transition bg-gray-950 hover:bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium">Новости</a>
                                 <a href="/team" className="transition bg-gray-950 hover:bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium">Команда</a>
+                                <a href="https://t.me/bad_bats_ftc" className="transition bg-gray-950 hover:bg-gray-800 text-blue-300 rounded-md px-3 py-2 text-sm font-medium">Telegram</a>
                             </div>
                         </div>
                     </div>
@@ -45,6 +48,7 @@ export default function Navbar() {
                     <a href="/" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base font-medium">Главная</a>
                     <a href="/news/1" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base font-medium">Новости</a>
                     <a href="/team" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base font-medium">Команда</a>
+                    <a href="https://t.me/bad_bats_ftc" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base text-blue-300 font-medium">Telegram</a>
                 </div>
             </div>
         </nav>
