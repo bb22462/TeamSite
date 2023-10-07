@@ -4,7 +4,7 @@ import AnimatedButton from "../components/animated_button";
 export async function getPosts(page: number) {
   var cur_page: any = await getPageCount() - (page - 1);
   let res = await fetch(
-    `http://localhost:1337/api/posts?pagination[page]=${cur_page}&pagination[pageSize]=5`,
+    `http://127.0.0.1:1337/api/posts?pagination[page]=${cur_page}&pagination[pageSize]=5`,
     {
       method: "GET",
       cache: 'no-store',
@@ -25,7 +25,7 @@ export async function getPosts(page: number) {
     for (var i = 0; i < pageSize; i++) {
       elements.push(
         <PostPreview
-          href={`/blog/${res.data[i].id}`}
+          href={`/news_view/${res.data[i].id}`}
           date={res.data[i].attributes.Date}
           title={res.data[i].attributes.Title}
         />
@@ -51,7 +51,7 @@ export async function getPosts(page: number) {
 }
 
 export async function getData(post: string) {
-  let res = await fetch(`https://strapi-indx-blog.onrender.com/api/posts/${post}`, {
+  let res = await fetch(`http://127.0.0.1:1337/api/posts/${post}`, {
     method: "GET",
     cache: 'no-store',
     headers: {
@@ -64,7 +64,7 @@ export async function getData(post: string) {
 }
 
 export async function getPageCount() {
-  let res = await fetch(`http://localhost:1337/api/posts?pagination[page]=1&pagination[pageSize]=5`, {
+  let res = await fetch(`http://127.0.0.1:1337/api/posts?pagination[page]=1&pagination[pageSize]=5`, {
     method: "GET",
     cache: 'no-store',
     headers: {
