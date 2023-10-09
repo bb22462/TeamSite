@@ -18,7 +18,7 @@ export default function Team() {
                     <h1 className='font-bold text-3xl text-center'>Состав Команды</h1>
                     <div className='text-center mb-10'>
                         <Member fileName="elina" name="Элина Александровна" role="Руководитель" list={[]}></Member>
-                        <a className="text-blue-500" href="https://t.me/dy4enkolina">Telegram</a>                
+                        <a className="transition text-blue-500 bg-gray-950 hover:bg-gray-800 p-3 rounded-md " href="https://t.me/dy4enkolina">Telegram</a>                
                     </div>
                     <div className='grid lg:grid-cols-3 lg:grid-rows-2 grid-cols-1 grid-rows-6'>
                         <Member fileName="danya" name="Парамонов Даня" role="Конструктор" list={["Сборка робота", "Контроль за кабинетом", "Систематизация"]}></Member>

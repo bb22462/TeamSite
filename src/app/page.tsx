@@ -24,7 +24,7 @@ export default function Home() {
       <div className='p-5 flex flex-col justify-center items-center'>
         <div className='p-5 flex flex-col lg:flex-row justify-center items-center'>
         <div className='flex-none p-5'>
-          <img src="error.png" alt="" style={{height: '300px', width: '300px'}} />
+          <img className='lg:h-[412px] lg:w-[626px] sm:h-[206px] sm:w-[313px] rounded-md' src="members/team.jpg" alt="" style={{}} />
         </div>
         <div>
           <h1 className="text-3xl text-center mb-5">О Команде</h1>
