@@ -19,7 +19,7 @@ export async function getPosts(page: number) {
   if (Object.keys(res.data).length > 0) {
     if (page != 1) {
        elements.push(
-        <a href={`/news/${page - 1}`}>Previous Page</a>
+        <a href={`/news/${page - 1}`}>Предыдущая страница</a>
        ) 
     }
     for (var i = 0; i < pageSize; i++) {
@@ -33,14 +33,14 @@ export async function getPosts(page: number) {
     }
     if (page != res.meta.pagination.pageCount) {
         elements.push(
-         <a href={`/news/${page + 1}`}>Next Page</a>
+         <a href={`/news/${page + 1}`}>Следующая страница</a>
         ) 
      }
   } else {
     let notfound: any[] = [
     <>
       <div>
-          <h1>Page Not Found</h1>
+          <h1>Ошибка</h1>
       </div>
     </>
     ];
