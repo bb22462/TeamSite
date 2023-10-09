@@ -5,7 +5,6 @@ import { metadata } from "@/app/layout";
 export default async function Page({ params }: { params: { id: string } }) {
 
   let post = await getData(params.id);
-  metadata.title = post.Title;
   return (
     <Post title={post.Title} date={post.Date} article={post.Article}></Post>
   );
