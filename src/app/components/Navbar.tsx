@@ -2,6 +2,7 @@
 import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { PaperAirplaneIcon, CommandLineIcon } from '@heroicons/react/24/outline'
 
 export default function Navbar() {
     const [showNav, setShowNav] = React.useState<boolean>(false);
@@ -37,7 +38,8 @@ export default function Navbar() {
                                 <a href="/" className="transition bg-gray-950 hover:bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium">Главная</a>
                                 <a href="/news/1" className="transition bg-gray-950 hover:bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium">Новости</a>
                                 <a href="/team" className="transition bg-gray-950 hover:bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium">Команда</a>
-                                <a href="https://t.me/bad_bats_ftc" className="transition bg-gray-950 hover:bg-gray-800 text-blue-300 rounded-md px-3 py-2 text-sm font-medium">Telegram</a>
+                                <a href="https://t.me/bad_bats_ftc" className="transition bg-gray-950 hover:bg-gray-800 text-blue-300 rounded-md px-3 py-2 text-sm font-medium">Telegram <PaperAirplaneIcon className="h-4 w-4 inline"></PaperAirplaneIcon></a>
+                                <a href="https://github.com/bb22462" className="transition bg-gray-950 hover:bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium">GitHub <CommandLineIcon className="h-4 w-4 inline"></CommandLineIcon></a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +50,8 @@ export default function Navbar() {
                     <a href="/" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base font-medium">Главная</a>
                     <a href="/news/1" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base font-medium">Новости</a>
                     <a href="/team" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base font-medium">Команда</a>
-                    <a href="https://t.me/bad_bats_ftc" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base text-blue-300 font-medium">Telegram</a>
+                    <a href="https://t.me/bad_bats_ftc" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base text-blue-300 font-medium">Telegram <PaperAirplaneIcon className="h-4 w-4 inline"></PaperAirplaneIcon></a>
+                    <a href="https://github.com/bb22462" className="transition bg-gray-950 hover:bg-gray-800 block rounded-md px-3 py-2 text-base font-medium">GitHub <CommandLineIcon className="h-4 w-4 inline"></CommandLineIcon></a>
                 </div>
             </div>
         </nav>
