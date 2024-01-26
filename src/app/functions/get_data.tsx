@@ -4,7 +4,7 @@ import AnimatedButton from "../components/animated_button";
 export async function getPosts(page: number) {
   var cur_page: any = await getPageCount() - (page - 1);
   let res = await fetch(
-    `http://admin.badbats.l126.ru/api/posts?pagination[page]=${cur_page}&pagination[pageSize]=5`,
+    `http://127.0.0.1:1337/api/posts?pagination[page]=${cur_page}&pagination[pageSize]=5`,
     {
       method: "GET",
       cache: 'no-store',
@@ -51,7 +51,7 @@ export async function getPosts(page: number) {
 }
 
 export async function getData(post: string) {
-  let res = await fetch(`http://admin.badbats.l126.ru/api/posts/${post}`, {
+  let res = await fetch(`http://127.0.0.1:1337/api/posts/${post}`, {
     method: "GET",
     cache: 'no-store',
     headers: {
@@ -64,7 +64,7 @@ export async function getData(post: string) {
 }
 
 export async function getPageCount() {
-  let res = await fetch(`http://admin.badbats.l126.ru/api/posts?pagination[page]=1&pagination[pageSize]=5`, {
+  let res = await fetch(`http://127.0.0.1:1337/api/posts?pagination[page]=1&pagination[pageSize]=5`, {
     method: "GET",
     cache: 'no-store',
     headers: {
